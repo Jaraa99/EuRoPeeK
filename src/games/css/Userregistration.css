@@ -1,0 +1,127 @@
+
+/* Fondo general */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('src/assets/buu.jpeg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Contenedor del formulario */
+.registration-container {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  width: 320px;
+}
+
+/* Título */
+.registration-container h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+/* Campos de entrada */
+.registration-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  border: 2px solid white;
+  border-radius: 8px;
+  outline: none;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Botón de registro */
+.registration-container button {
+  width: 100%;
+  height: 40px;
+  font-size: 18px;
+  background-color: #1d3557;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.registration-container button:hover {
+  background-color: #457b9d;
+}
+
+/* Pantalla de carga */
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  display: none; /* Se muestra dinámicamente tras el registro */
+}
+
+/* --- Responsive con @media --- */
+
+/* Para pantallas de 768px o menos (tabletas, móviles grandes) */
+@media (max-width: 768px) {
+  /* Reducir el tamaño del contenedor y el título */
+  .registration-container {
+    padding: 20px;
+    width: 270px;
+  }
+
+  .registration-container h1 {
+    font-size: 28px; /* Reducir tamaño de la fuente */
+    margin-bottom: 20px;
+  }
+
+  .registration-container input {
+    font-size: 16px; /* Reducir tamaño del texto de los campos */
+    padding: 8px;
+  }
+
+  .registration-container button {
+    font-size: 16px; /* Reducir tamaño del texto del botón */
+    height: 35px;
+  }
+}
+
+/* Para pantallas de 480px o menos (móviles pequeños) */
+@media (max-width: 480px) {
+  /* Reducir más el tamaño del contenedor y el título */
+  .registration-container {
+    padding: 15px;
+    width: 240px;
+  }
+
+  .registration-container h1 {
+    font-size: 24px; /* Reducir aún más el tamaño del título */
+    margin-bottom: 15px;
+  }
+
+  .registration-container input {
+    font-size: 14px; /* Reducir aún más el tamaño de los campos de entrada */
+    padding: 6px;
+  }
+
+  .registration-container button {
+    font-size: 14px; /* Reducir tamaño del botón */
+    height: 30px;
+  }
+}

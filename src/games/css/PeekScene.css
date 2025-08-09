@@ -1,0 +1,208 @@
+/* Fondo general */
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('src/assents/casa.jpg');
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  color: white;
+  overflow: hidden;
+}
+
+/* Texto de bienvenida */
+.welcome-text {
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  font-size: 28px;
+}
+
+/* Puntaje */
+.score-text {
+  position: absolute;
+  top: 60px;
+  right: 50px;
+  font-size: 20px;
+  color: yellow;
+}
+
+/* Texto de resultado */
+.result-text {
+  position: absolute;
+  top: 90px;
+  left: 50px;
+  font-size: 20px;
+  color: lime;
+}
+
+/* Contenedor de imágenes */
+.draggable-images {
+  position: absolute;
+  top: 130px;
+  left: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Cada imagen */
+.draggable {
+  width: 80px;
+  height: 80px;
+  cursor: grab;
+}
+
+/* Área objetivo */
+.phrase-area {
+  position: absolute;
+  top: 100px;
+  left: 300px;
+  width: 200px;
+  height: 200px;
+  border: 2px dashed white;
+  box-sizing: border-box;
+}
+
+/* Texto de carga */
+.loading-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 32px;
+  transform: translate(-50%, -50%);
+}
+
+/* Imagen animada (búho) */
+.loading-image {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: 100px;
+  transform: translateX(-50%);
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: translateX(-50%) rotate(0deg); }
+  100% { transform: translateX(-50%) rotate(360deg); }
+}
+
+/* Botón de regreso */
+.back-button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #1d3557;
+  color: white;
+  padding: 10px 20px;
+  font-size: 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background-color: #457b9d;
+}
+
+/* --- Responsive con @media --- */
+
+/* Para pantallas de 768px o menos (tabletas, móviles grandes) */
+@media (max-width: 768px) {
+  .welcome-text {
+    font-size: 24px; /* Reducir tamaño del texto */
+    left: 20px; /* Ajustar posición */
+    top: 20px; /* Ajustar margen superior */
+  }
+
+  .score-text {
+    font-size: 18px; /* Reducir tamaño del texto */
+    right: 20px; /* Ajustar posición */
+  }
+
+  .result-text {
+    font-size: 18px; /* Reducir tamaño del texto */
+  }
+
+  .draggable-images {
+    top: 180px; /* Ajustar posición de las imágenes */
+    left: 20px; /* Ajustar posición */
+    gap: 15px; /* Reducir espacio entre las imágenes */
+  }
+
+  .draggable {
+    width: 60px; /* Reducir tamaño de las imágenes */
+    height: 60px;
+  }
+
+  .phrase-area {
+    top: 150px; /* Ajustar posición de la zona objetivo */
+    left: 200px; /* Ajustar posición */
+    width: 150px; /* Reducir tamaño */
+    height: 150px; /* Reducir tamaño */
+  }
+
+  .loading-text {
+    font-size: 24px; /* Reducir tamaño del texto */
+  }
+
+  .loading-image {
+    width: 80px; /* Reducir tamaño de la imagen */
+  }
+
+  .back-button {
+    font-size: 20px; /* Reducir tamaño del botón */
+    padding: 8px 16px; /* Reducir padding */
+  }
+}
+
+/* Para pantallas de 480px o menos (móviles pequeños) */
+@media (max-width: 480px) {
+  .welcome-text {
+    font-size: 20px; /* Reducir aún más el tamaño del texto */
+    left: 10px; /* Ajustar posición */
+    top: 10px; /* Ajustar margen superior */
+  }
+
+  .score-text {
+    font-size: 16px; /* Reducir tamaño del texto */
+    right: 10px; /* Ajustar posición */
+  }
+
+  .result-text {
+    font-size: 16px; /* Reducir tamaño del texto */
+  }
+
+  .draggable-images {
+    top: 220px; /* Ajustar posición de las imágenes */
+    left: 10px; /* Ajustar posición */
+    gap: 10px; /* Reducir espacio entre las imágenes */
+  }
+
+  .draggable {
+    width: 50px; /* Reducir tamaño de las imágenes */
+    height: 50px;
+  }
+
+  .phrase-area {
+    top: 180px; /* Ajustar posición de la zona objetivo */
+    left: 120px; /* Ajustar posición */
+    width: 120px; /* Reducir tamaño */
+    height: 120px; /* Reducir tamaño */
+  }
+
+  .loading-text {
+    font-size: 18px; /* Reducir tamaño del texto */
+  }
+
+  .loading-image {
+    width: 60px; /* Reducir tamaño de la imagen */
+  }
+
+  .back-button {
+    font-size: 18px; /* Reducir tamaño del botón */
+    padding: 6px 12px; /* Reducir padding */
+  }
+}

@@ -1,0 +1,110 @@
+/* Fondo del menú */
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('src/assents/buu.jpeg');
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  color: white;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Contenedor de los juegos */
+.menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 100px;
+  flex-wrap: wrap; /* Permite que los juegos se acomoden en múltiples filas */
+}
+
+/* Imagenes de los juegos con marco */
+.game-frame {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  transition: transform 0.2s;
+}
+
+.game-frame:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.game-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Ícono de usuario arriba a la derecha */
+.user-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+/* Botón de regreso */
+.back-button {
+  position: absolute;
+  bottom: 20px;
+  left: 10%;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+/* --- Responsive con @media --- */
+
+/* Para pantallas de 768px o menos (tabletas, móviles grandes) */
+@media (max-width: 768px) {
+  .menu-container {
+    gap: 50px; /* Reducir el espacio entre los juegos */
+  }
+
+  .game-frame {
+    width: 150px; /* Reducir el tamaño de las imágenes */
+    height: 150px;
+  }
+
+  .user-icon {
+    width: 35px;
+    height: 35px; /* Reducir el tamaño del ícono de usuario */
+  }
+
+  .back-button {
+    font-size: 20px; /* Reducir el tamaño del texto del botón de regreso */
+    left: 15%; /* Ajustar la posición del botón */
+  }
+}
+
+/* Para pantallas de 480px o menos (móviles pequeños) */
+@media (max-width: 480px) {
+  .menu-container {
+    gap: 20px; /* Reducir aún más el espacio entre los juegos */
+  }
+
+  .game-frame {
+    width: 120px; /* Reducir el tamaño de las imágenes */
+    height: 120px;
+  }
+
+  .user-icon {
+    width: 30px;
+    height: 30px; /* Reducir aún más el tamaño del ícono */
+  }
+
+  .back-button {
+    font-size: 18px; /* Reducir aún más el tamaño del texto del botón */
+    left: 20%; /* Ajustar la posición del botón en pantallas pequeñas */
+  }
+}

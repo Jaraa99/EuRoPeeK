@@ -1,0 +1,75 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Cuerpo */
+body {
+  background-color: #ffffff;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: px;
+  overflow-x: hidden; /* evita scroll lateral */
+}
+
+/* Contenedor general */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Imagen del búho */
+.owl-img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+/* Botones */
+button {
+  background-color: #ffffff;
+  color: #003366;
+  border: 2px solid white;
+  padding: 10px 20px;
+  margin: 10px 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 180px;
+}
+
+button:hover {
+  background-color: #e6e6e6;
+  color: #001f3f;
+}
+
+/* Responsive mejorado */
+@media (max-width: 768px) {
+  .owl-img {
+    max-width: 220px;
+  }
+
+  button {
+    width: 90%;
+    font-size: 1rem;
+  }
+
+  body {
+    padding: 10px;
+  }
+}

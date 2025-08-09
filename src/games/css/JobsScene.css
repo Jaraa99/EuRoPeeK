@@ -1,0 +1,110 @@
+/* ==================== Estilos base (Mobile First) ==================== */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8ff;
+  font-family: Arial, sans-serif;
+}
+
+/* Título */
+.jobs-title {
+  font-size: 18px;
+  color: #333333;
+  margin: 15px 0 0 20px;
+}
+
+/* Caja de puntaje */
+.score-box {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 140px;
+  height: 36px;
+  background-color: #ffffff;
+  border: 2px solid #000;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: #000;
+}
+
+/* Texto de resultado */
+.result-text {
+  font-size: 16px;
+  color: #000;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+/* Recuadros para las respuestas */
+.answer-slot {
+  width: 100px;
+  height: 44px;
+  border: 2px solid #000;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 6px 4px;
+  font-size: 16px;
+  color: #000;
+}
+
+/* Botones de palabras */
+.word-button {
+  width: 100px;
+  height: 44px;
+  background-color: #ffffff;
+  border: 2px solid #000;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 8px 4px;
+  font-size: 16px;
+  color: #000;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.word-button.selected {
+  background-color: #add8e6;
+  cursor: default;
+}
+
+/* ==================== Estilos para Desktop ==================== */
+@media screen and (min-width: 768px) {
+  .jobs-title {
+    font-size: 24px;
+    margin-left: 50px;
+  }
+
+  .score-box {
+    width: 180px;
+    height: 40px;
+    font-size: 20px;
+    right: 30px;
+  }
+
+  .result-text {
+    font-size: 20px;
+    margin-left: 50px;
+  }
+
+  .answer-slot {
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+    margin: 8px 6px;
+  }
+
+  .word-button {
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+    margin: 10px 6px;
+  }
+}

@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url("../assents/buu.jpeg"); /* Ajusta esta ruta según tu estructura */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 4px black;
+}
+
+.button {
+  font-size: 1.5rem;
+  color: white;
+  background-color: #1E90FF;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 32px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+  background-color: #0f5fc1;
+  color: #FFD700;
+}
+
+/* --- Responsive con @media --- */
+
+/* Para pantallas de 768px o menos (tabletas, móviles grandes) */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem; /* Ajuste de tamaño para mejorar legibilidad */
+    text-shadow: 1px 1px 3px black; /* Menos sombra en dispositivos pequeños */
+  }
+
+  .button {
+    font-size: 1.3rem; /* Reducir tamaño del texto */
+    padding: 10px 24px; /* Reducir el padding para pantallas más pequeñas */
+    width: auto; /* Asegura que el botón no se estire demasiado */
+  }
+}
+
+/* Para pantallas de 480px o menos (móviles pequeños) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem; /* Tamaño más pequeño para caber bien en móviles */
+  }
+
+  .button {
+    font-size: 1rem;
+    padding: 8px 20px; /* Reducir más el tamaño del botón */
+    width: 80%; /* Asegurar que el botón no se vea pequeño y ocupe más espacio */
+  }
+}

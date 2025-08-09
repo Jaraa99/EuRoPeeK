@@ -1,0 +1,81 @@
+/* Fondo completo */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('src/assents/bhu.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-left: 14.28%; /* Aproximación a width / 7 */
+  padding-bottom: 40px;
+}
+
+/* Contenedor de los botones */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Botón base */
+.button {
+  width: 160px;
+  height: 50px;
+  background-color: #1d3557;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  border: 2px solid white;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Efecto hover */
+.button:hover {
+  background-color: #457b9d;
+}
+
+/* --- Responsive con @media --- */
+
+/* Para pantallas de 768px o menos (tabletas, móviles grandes) */
+@media (max-width: 768px) {
+  body {
+    padding-left: 10%; /* Reducir margen izquierdo para pantallas medianas */
+    padding-bottom: 30px; /* Reducir margen inferior */
+  }
+
+  .button-container {
+    gap: 15px; /* Reducir el espacio entre botones */
+  }
+
+  .button {
+    width: 140px; /* Reducir el tamaño del botón */
+    height: 45px;
+    font-size: 20px; /* Reducir el tamaño de la fuente */
+  }
+}
+
+/* Para pantallas de 480px o menos (móviles pequeños) */
+@media (max-width: 480px) {
+  body {
+    padding-left: 5%; /* Reducir más el margen izquierdo */
+    padding-bottom: 20px; /* Reducir margen inferior aún más */
+  }
+
+  .button-container {
+    gap: 10px; /* Reducir el espacio entre botones */
+  }
+
+  .button {
+    width: 120px; /* Reducir más el tamaño de los botones */
+    height: 40px;
+    font-size: 16px; /* Reducir tamaño de la fuente para botones pequeños */
+  }
+}

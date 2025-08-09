@@ -1,0 +1,64 @@
+/* Ocupa toda la pantalla */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("src/assents/buu.jpeg");
+    background-size: cover;
+    background-position: center;
+    animation: zoomInOut 3s infinite ease-in-out;
+}
+
+/* Animación tipo latido */
+@keyframes zoomInOut {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.02);
+    }
+}
+
+/* Redirección automática a otra página después de 3 segundos */
+body::after {
+    content: '';
+    position: fixed;
+    animation: redirect 3s forwards;
+}
+
+@keyframes redirect {
+    100% {
+        /* JavaScript redirige al final */
+    }
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .background {
+        background-size: cover; /* Se adapta bien en pantallas pequeñas */
+        animation: zoomInOut 4s infinite ease-in-out; /* Más lento en móviles */
+    }
+    
+    /* Ajustar el fondo a la pantalla completa */
+    body, html {
+        height: 100%;
+        overflow: hidden;
+    }
+}
+
+/* Estilos para pantallas grandes (escritorio) */
+@media (min-width: 769px) {
+    .background {
+        background-size: cover; /* Mantener tamaño adecuado */
+        animation: zoomInOut 3s infinite ease-in-out; /* Animación rápida en escritorio */
+    }
+
+    /* Puedes agregar más estilos específicos para escritorio si es necesario */
+}
