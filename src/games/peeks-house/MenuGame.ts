@@ -6,11 +6,11 @@ export class MenuGame extends Phaser.Scene {
   }
 
   preload() {
-    this.load.image('pajaros', 'src/assets/pagaros.png');
-    this.load.image('image1', 'src/assets/aim.png');
-    this.load.image('image2', 'src/assets/jobs.png');
-    this.load.image('image3', 'src/assets/hoouse.png');
-    this.load.image('userIcon', 'src/assets/ingles.png');
+    this.load.image('pajaros', '/assets/pagaros.png');
+    this.load.image('image1', '/assets/aim.png');
+    this.load.image('image2', '/assets/jobs.png');
+    this.load.image('image3', '/assets/hoouse.png');
+    this.load.image('userIcon', '/assets/ingles.png');
   }
 
   create() {

@@ -6,7 +6,7 @@ export class HomeChargerScene extends Phaser.Scene {
   }
 
   preload() {
-    this.load.image('europeekkk', 'src/assets/europeekkk.png');
+    this.load.image('europeekkk', '/assets/europeekkk.png');
   }
 
   create() {

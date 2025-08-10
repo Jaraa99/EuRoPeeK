@@ -9,11 +9,11 @@ export class AvatarSelecctionScene extends Phaser.Scene {
   }
 
   preload() {
-    this.load.image("peekk", "src/assets/peekk.png");
-    this.load.image("peek", "src/assets/peek.png");
-    this.load.image("ecu","src/assets/ecu.png");
-    this.load.image("cholo","src/assets/cholo.png");
-    this.load.image("fiesta","src/assets/fiesta.png");
+    this.load.image("peekk", "/assets/peekk.png");
+    this.load.image("peek", "/assets/peek.png");
+    this.load.image("ecu","/assets/ecu.png");
+    this.load.image("cholo","/assets/cholo.png");
+    this.load.image("fiesta","/assets/fiesta.png");
   }
 
   create() {
