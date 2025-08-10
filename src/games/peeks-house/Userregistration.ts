@@ -13,7 +13,7 @@ export class Userregistration extends Phaser.Scene {
 
     preload() {
         // Ya no cargamos imagen de fondo
-        // this.load.image('background', 'src/assents/buu.jpeg');
+        // this.load.image('background', 'src/assets/buu.jpeg');
     }
 
     create() {

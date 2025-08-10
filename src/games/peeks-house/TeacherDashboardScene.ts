@@ -9,7 +9,7 @@ export class TeacherDashboardScene extends Phaser.Scene {
 
   preload() {
     // Cargar imagen de fondo (verifica que exista)
-    this.load.image("teacherBg", "src/assents/logi.png");
+    this.load.image("teacherBg", "src/assets/logi.png");
   }
 
   create() {

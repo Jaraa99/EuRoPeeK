@@ -8,7 +8,7 @@ export class MenuScene extends Phaser.Scene {
   }
 
   preload() {
-    this.load.image('logi', 'src/assents/logi.png');  // Fondo del menú
+    this.load.image('logi', 'src/assets/logi.png');  // Fondo del menú
   }
 
   create() {

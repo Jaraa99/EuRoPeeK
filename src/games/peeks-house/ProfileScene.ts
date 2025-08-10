@@ -17,8 +17,8 @@ export class ProfileScene extends Phaser.Scene {
   }
 
   preload() {
-    this.load.audio("profileMusic", "src/assents/profile-music.mp3");
-    this.load.image("fondos", "src/assents/fondos.png"); // Carga la imagen de fondo
+    this.load.audio("profileMusic", "src/assets/profile-music.mp3");
+    this.load.image("fondos", "src/assets/fondos.png"); // Carga la imagen de fondo
   }
 
   create() {

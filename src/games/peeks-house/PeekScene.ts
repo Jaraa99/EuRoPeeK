@@ -26,10 +26,10 @@ export class PeekScene extends Phaser.Scene {
   }
 
   preload() {
-    this.load.image("house-bg", "src/assents/hpuse.jpg");
-    this.load.audio("correcto", "src/assents/correct.mp3");
-    this.load.audio("incorrecto", "src/assents/wrong.mp3");
-    this.load.audio("musica", "src/assents/music.mp3");
+    this.load.image("house-bg", "src/assets/hpuse.jpg");
+    this.load.audio("correcto", "src/assets/correct.mp3");
+    this.load.audio("incorrecto", "src/assets/wrong.mp3");
+    this.load.audio("musica", "src/assets/music.mp3");
   }
 
   create() {

@@ -11,7 +11,7 @@ export class Logins extends Phaser.Scene {
   }
 
   preload() {
-    this.load.image("login", "src/assents/l.png"); // imagen de tu búho si la tienes
+    this.load.image("login", "src/assets/l.png"); // imagen de tu búho si la tienes
   }
 
   create() {

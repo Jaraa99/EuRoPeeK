@@ -67,12 +67,12 @@ export class JobsScene extends Phaser.Scene {
   }
 
   preload() {
-    this.load.image('bgJobs', 'src/assents/jobs.jpg');
-    this.load.image('owlHappy', 'src/assents/owl_happy.png');
-    this.load.image('owlSad', 'src/assents/owl_sad.png');
-    this.load.audio('correctSound', 'src/assents/correct.mp3');
-    this.load.audio('wrongSound', 'src/assents/wrong.mp3');
-    this.load.audio('bgMusic', 'src/assents/background_music.mp3');
+    this.load.image('bgJobs', 'src/assets/jobs.jpg');
+    this.load.image('owlHappy', 'src/assets/owl_happy.png');
+    this.load.image('owlSad', 'src/assets/owl_sad.png');
+    this.load.audio('correctSound', 'src/assets/correct.mp3');
+    this.load.audio('wrongSound', 'src/assets/wrong.mp3');
+    this.load.audio('bgMusic', 'src/assets/background_music.mp3');
   }
 
   create() {

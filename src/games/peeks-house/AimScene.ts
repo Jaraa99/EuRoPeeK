@@ -129,13 +129,13 @@ export class AimScene extends Phaser.Scene {
   }
 
   preload() {
-    this.load.image("iii", 'src/assents/iii.jpg');
-    this.load.audio('bgMusic', 'src/assents/music.mp3');
-    this.load.audio('correctSound', 'src/assents/correct.mp3');
-    this.load.audio('wrongSound', 'src/assents/wrong.mp3');
-    this.load.audio('spinSound', 'src/assents/spin.mp3');
-    this.load.image('owlHappy', 'src/assents/owl_happy.png');
-    this.load.image('owlSad', 'src/assents/owl_sad.png');
+    this.load.image("iii", 'src/assets/iii.jpg');
+    this.load.audio('bgMusic', 'src/assets/music.mp3');
+    this.load.audio('correctSound', 'src/assets/correct.mp3');
+    this.load.audio('wrongSound', 'src/assets/wrong.mp3');
+    this.load.audio('spinSound', 'src/assets/spin.mp3');
+    this.load.image('owlHappy', 'src/assets/owl_happy.png');
+    this.load.image('owlSad', 'src/assets/owl_sad.png');
   }
 
   create() {
